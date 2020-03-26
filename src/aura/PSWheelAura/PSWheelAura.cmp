@@ -1,0 +1,26 @@
+<aura:component controller="PSWheelController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <ltng:require
+    scripts="{!$Resource.PSWheel + '/vis-network.min.js'}"
+    afterScriptsLoaded="{!c.jsLoaded}"
+  />
+
+  <aura:attribute name="wheelData" type="Object" />
+  <aura:attribute name="recordId" type="String" />
+  <aura:attribute name="templateName" type="String" default="Benefit Programs" />
+  <aura:attribute name="network" type="Object" />
+  <aura:attribute name="IsSpinner" type="Boolean" default="false" />
+
+  <div class="slds-card">
+    <aura:if isTrue="{!v.IsSpinner}">
+      <lightning:spinner variant="brand" size="large" />
+    </aura:if>
+    <div aura:id="wheelContainer" id="wheelContainer">
+      <div class="network" id="{!globalId + '_network'}"></div>
+    </div>
+    <div aura:id="controlDiv" id="controlDiv">
+        <div class="imageDiv">
+            <img src="{!$Resource.PSWheel + '/RefreshIcon.png'}" height="20" width="20" onclick="{!c.refresh}" />
+        </div>
+    </div>
+  </div>
+</aura:component>

@@ -1,0 +1,17 @@
+.THIS .network {
+  height: 400px;
+  background-color: white;
+}
+
+.THIS #wheelContainer {
+	position: relative;
+}
+
+.THIS #controlDiv {
+	position: absolute; top: 0px; right: 0px; z-index: 5; padding: 3px; 
+}
+
+.THIS .imageDiv {
+	vertical-align:middle; 
+    text-align:center;
+}

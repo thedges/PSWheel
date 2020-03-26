@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>PSWheelController</members>
+        <members>PSWheelTemplatePicklist</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>PSWheelAura</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>PSWheelItemDef__c</members>
+        <members>PSWheelTemplate__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>PSWheelTemplate__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>PSWheelTemplate_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>PSWheelItemDef__c-PSWheelItemDef Layout</members>
+        <members>PSWheelTemplate__c-PSWheelTemplate Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>PSWheel</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>PSWheel</members>
+        <name>StaticResource</name>
+    </types>
+    <version>42.0</version>
+</Package>
