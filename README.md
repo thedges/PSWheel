@@ -3,14 +3,34 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 
 A configurable wheel component to show related items (benefit programs, licenses, etc...) that are tied to a parent object (contact, applicant, etc...)
 
-This package contains a Lightning component for performing photo-based inspections. Currently you need to setup as a Quick Action on a record and use from standard Salesforce Mobile app. It was developed as a Lightning Web Component so hopefully can utilize in Field Service Lightning at some point in future when they allow LWC extensions. 
+This package contains a Lightning component for creating a wheel to show dependent items related to the current record. For example, the wheel could be used to show related benefit programs a contact is eligible for and which ones they are currently enrolled, or perhaps a list of licenses they need to acquire. The example below shows a sample list of benefit programs (ex: child support, cash assistance, etc...). Ones they are enrolled in are in blue while others in grey are which ones they are eligible for. The component can be placed on any object type and the list of items around the wheel are fully configurable.
 
 ![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheel.png "PSWheel")
 
-Some text
+# Configuration
 
+The wheel is controlled by creating a PSWheelTemplate record and then configuring PSWheelItemDef child records. The PSWheelTemplate record primary creates a "template name" so that you can reference that configuration when you configure the wheel component on a record page. 
+
+## PSWheelTemplate
+Here are the configuration options for PSWheelTemplate:
+
+| Parameter  | Definition |
+| ------------- | ------------- |
+| Template Name  | A unique name for the wheel template. You will reference this when configuration the wheel component on record page  |
+| Child Object API Name  | The object API name of the child record to query for 'wheel items'  |
+| Child Parent Field  | The field API name on child object that references the parent object you are placing the wheel component on  |
+| Child Match Field  | The field API name on child object to get the value to match against the 'Match Value' in the PSWheelItemDef records. This is used to match the custom object in the demo (program, license, etc...) to the PSWheelItemDef record that defines the wheel item. Typically you would create a picklist on your custom object and reference that field API name here. |
+| Child Filter Clause  | [Optional] A extra SOQL where clause to filter out child records to eliminate them from matching in the wheel. For example, you could have a clause like 'Status__c = 'active''  |
+| Center Label Field  | The field API name on main record to use as the label for the center image in the wheel |
+| Center Image Default  | A default image URL to show in the center of wheel if image is not configured or null for current record  |
+| Center Image Field  | [Optional] The field API name of main record to use to get image to place in center of wheel |
+
+And here is a sample configuration for a PSWheelItemDef:
 
 ![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheelTemplate.png "PSWheelTemplate")
+
+
+## PSWheelItemDef
 
 Some text
 
