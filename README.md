@@ -7,6 +7,16 @@ This package contains a Lightning component for performing photo-based inspectio
 
 ![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheel.png "PSWheel")
 
+Some text
+
+
+![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheelTemplate.png "PSWheelTemplate")
+
+Some text
+
+
+![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheelItemDef.png "PSWheelItemDef")
+
 This component works in following way:
 * Inspector/user/agent would use quick action in SF mobile to launch component
 * Take a picture of the issue
