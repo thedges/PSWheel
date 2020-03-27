@@ -7,7 +7,7 @@ This package contains a Lightning component for creating a wheel to show depende
 
 # Configuration
 
-The wheel is controlled by creating a PSWheelTemplate record and then configuring PSWheelItemDef child records. The PSWheelTemplate record primary creates a "template name" so that you can reference that configuration when you configure the wheel component on a record page. 
+The wheel is controlled by creating a __PSWheelTemplate__ record and then configuring __PSWheelItemDef__ child records. The PSWheelTemplate record primarily defines a "template name" so that you can reference that configuration when you configure the wheel component on a record page. 
 
 ## PSWheelTemplate
 Here are the configuration options for PSWheelTemplate:
@@ -18,7 +18,7 @@ Here are the configuration options for PSWheelTemplate:
 | Child Object API Name  | The object API name of the child record to query for 'wheel items'  |
 | Child Parent Field  | The field API name on child object that references the parent object you are placing the wheel component on  |
 | Child Match Field  | The field API name on child object to get the value to match against the 'Match Value' in the PSWheelItemDef records. This is used to match the custom object in the demo (program, license, etc...) to the PSWheelItemDef record that defines the wheel item. Typically you would create a picklist on your custom object and reference that field API name here. |
-| Child Filter Clause  | [Optional] A extra SOQL where clause to filter out child records to eliminate them from matching in the wheel. For example, you could have a clause like 'Status__c = 'active''  |
+| Child Filter Clause  | [Optional] A extra SOQL where clause to filter out child records to eliminate them from matching in the wheel. For example, you could have a clause like __Status__c = 'active'__  |
 | Center Label Field  | The field API name on main record to use as the label for the center image in the wheel |
 | Center Image Default  | A default image URL to show in the center of wheel if image is not configured or null for current record  |
 | Center Image Field  | [Optional] The field API name of main record to use to get image to place in center of wheel |
@@ -55,6 +55,8 @@ Next zip up all your images in a zip file and load them in your Salesforce org a
 
 /resource/ProgramIcons/FoodAssistance_Active.png
 /resource/ProgramIcons/FoodAssistance_Inactive.png
+
+Please refer to the __WheelImageSamples.zip__ file in the GitHub repo for examples. If you create new images for your wheel, please share back to me to add to the samples.
 
 # Setup Instructions
 Here are steps to setup and configure this component:
