@@ -5,7 +5,7 @@ A configurable wheel component to show related items (benefit programs, licenses
 
 This package contains a Lightning component for performing photo-based inspections. Currently you need to setup as a Quick Action on a record and use from standard Salesforce Mobile app. It was developed as a Lightning Web Component so hopefully can utilize in Field Service Lightning at some point in future when they allow LWC extensions. 
 
-![alt text](https://github.com/thedges/PSPhotoInspection/blob/master/PSPhotoInspection.gif "PSPhotoInspection")
+![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheel.png "PSWheel")
 
 This component works in following way:
 * Inspector/user/agent would use quick action in SF mobile to launch component
