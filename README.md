@@ -1,7 +1,7 @@
 # PSWheel
 THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
 
-This package contains a Lightning component for creating a wheel to show dependent items related to the current record. For example, the wheel could be used to show related benefit programs a contact is eligible for and which ones they are currently enrolled, or perhaps a list of licenses they need to acquire. The example below shows a sample list of benefit programs (ex: child support, cash assistance, etc...). Ones they are enrolled in are in blue while others in grey are which ones they are eligible for. The component can be placed on any object type and the list of items around the wheel are fully configurable.
+This package contains a Lightning component for creating a wheel to show dependent items related to the current record. For example, the wheel could be used to show related benefit programs a contact is eligible for and which ones they are currently enrolled, or perhaps a list of licenses they need to acquire. The example below shows a sample list of benefit programs (ex: child support, cash assistance, etc...). Programs they are enrolled in are in blue while others in grey are programs they are not enrolled in but are eligible for. The component can be placed on any object type and the list of items around the wheel are fully configurable.
 
 ![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheel.png "PSWheel")
 
