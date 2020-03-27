@@ -62,12 +62,12 @@ Please refer to the __WheelImageSamples.zip__ file in the GitHub repo for exampl
 
 # Setup Instructions
 Here are steps to setup and configure this component:
-  * Install the component per the "Deploy to Salesforce" button below. 
-  * Assign the PSWheel permission set to any user that will use the PSWheel component.
-  * Navigate to the PSWheelTemplate tab
-    - Create a PSWheelTemplate record and provide unique name. Fill out the record field options per above definitions.
-    - Create 1-to-many PSWheelItemDef records to define configuration of all the nodes of the wheel. Fill out the record field options per above definitions.
-  * Edit the record page for the object you want to place the wheel component on. Drag the PSWheelAura component to area on the page. In the configuration options for the component, pick the template name you defined above.
+  * Install the component per the __Deploy to Salesforce__ button below. 
+  * Assign the __PSWheel__ permission set to any user that will use the PSWheel component.
+  * Navigate to the __PSWheelTemplate__ tab
+    - Create a __PSWheelTemplate__ record and provide unique name. Fill out the record field options per above definitions.
+    - Create 1-to-many __PSWheelItemDef__ records to define configuration of all the nodes of the wheel. Fill out the record field options per above definitions.
+  * Edit the record page for the object you want to place the wheel component on. Drag the __PSWheelAura__ component to area on the page. In the configuration options for the component, pick the template name you defined above.
   * That is it.
 
 <a href="https://githubsfdeploy.herokuapp.com">
