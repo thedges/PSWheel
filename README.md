@@ -7,6 +7,10 @@ The example below shows a sample list of benefit programs (ex: child support, ca
 
 ![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheel.png "PSWheel")
 
+# Dependency
+
+This uses the Vis.js Network javascript library found [here](https://visjs.org/). Originally I wanted to use Lightning Web Component but locker service doesn't like this library so I had to fall back to Aura component and set API at version 39 to disable locker service. Have plans to make a version of the component based on [D3.js](https://d3js.org/) but while D3.js is very powerful, will take some time to learn.
+
 # Configuration
 
 The wheel is controlled by creating a __PSWheelTemplate__ record and then configuring __PSWheelItemDef__ child records. The PSWheelTemplate record primarily defines a "template name" so that you can reference that configuration when you configure the wheel component on a record page. 
