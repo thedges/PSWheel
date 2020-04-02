@@ -23,6 +23,7 @@ Here are the configuration options for PSWheelTemplate:
 | Template Name  | A unique name for the wheel template. You will reference this when configuration the wheel component on record page  |
 | Child Object API Name  | The object API name of the child record to query for 'wheel items'  |
 | Child Parent Field  | The field API name on child object that references the parent object you are placing the wheel component on  |
+| Child Label Field  | [Optional] The field API name on child object to use as the label for that node/circle on the wheel  |
 | Child Match Field  | The field API name on child object to get the value to match against the 'Match Value' in the PSWheelItemDef records. This is used to match the custom object in the demo (program, license, etc...) to the PSWheelItemDef record that defines the wheel item. Typically you would create a picklist on your custom object and reference that field API name here. |
 | Child Filter Clause  | [Optional] A extra SOQL where clause to filter out child records to eliminate them from matching in the wheel. For example, you could have a clause like __Status__c = 'active'__  |
 | Center Label Field  | The field API name on main record to use as the label for the center image in the wheel |
