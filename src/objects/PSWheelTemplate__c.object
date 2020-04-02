@@ -98,6 +98,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Child_Label_Field__c</fullName>
+        <externalId>false</externalId>
+        <label>Child Label Field</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Child_Match_Field__c</fullName>
         <externalId>false</externalId>
         <inlineHelpText>The API field name on child object to use for matching value</inlineHelpText>

@@ -40,6 +40,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>PSWheelTemplate__c.Child_Label_Field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>PSWheelTemplate__c.Child_Match_Field__c</field>
         <readable>true</readable>
     </fieldPermissions>
