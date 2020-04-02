@@ -7,6 +7,10 @@ The example below shows a sample list of benefit programs (ex: child support, ca
 
 ![alt text](https://github.com/thedges/PSWheel/blob/master/PSWheel.png "PSWheel")
 
+# Dependency
+
+This uses the Vis.js Network javascript library found [here](https://visjs.org/). Originally I wanted to use Lightning Web Component but locker service doesn't like this library so I had to fall back to Aura component and set API at version 39 to disable locker service. Have plans to make a version of the component based on [D3.js](https://d3js.org/) but while D3.js is very powerful, will take some time to learn.
+
 # Configuration
 
 The wheel is controlled by creating a __PSWheelTemplate__ record and then configuring __PSWheelItemDef__ child records. The PSWheelTemplate record primarily defines a "template name" so that you can reference that configuration when you configure the wheel component on a record page. 
@@ -62,12 +66,12 @@ Please refer to the __WheelImageSamples.zip__ file in the GitHub repo for exampl
 
 # Setup Instructions
 Here are steps to setup and configure this component:
-  * Install the component per the "Deploy to Salesforce" button below. 
-  * Assign the PSWheel permission set to any user that will use the PSWheel component.
-  * Navigate to the PSWheelTemplate tab
-    - Create a PSWheelTemplate record and provide unique name. Fill out the record field options per above definitions.
-    - Create 1-to-many PSWheelItemDef records to define configuration of all the nodes of the wheel. Fill out the record field options per above definitions.
-  * Edit the record page for the object you want to place the wheel component on. Drag the PSWheelAura component to area on the page. In the configuration options for the component, pick the template name you defined above.
+  * Install the component per the __Deploy to Salesforce__ button below. 
+  * Assign the __PSWheel__ permission set to any user that will use the PSWheel component.
+  * Navigate to the __PSWheelTemplate__ tab
+    - Create a __PSWheelTemplate__ record and provide unique name. Fill out the record field options per above definitions.
+    - Create 1-to-many __PSWheelItemDef__ records to define configuration of all the nodes of the wheel. Fill out the record field options per above definitions.
+  * Edit the record page for the object you want to place the wheel component on. Drag the __PSWheelAura__ component to area on the page. In the configuration options for the component, pick the template name you defined above.
   * That is it.
 
 <a href="https://githubsfdeploy.herokuapp.com">
